@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1 id="t" style="font-size: 72px">
+    </h1>
+  </body>
+  <script>
+    const e = document.getElementById("t");
+    const u = () => {
+	e.innerText = (new Date()).toISOString();
+	requestAnimationFrame(u);
+    }
+    u();
+  </script>
+</html>
